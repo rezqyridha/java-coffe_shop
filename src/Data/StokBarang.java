@@ -8,15 +8,15 @@ package Data;
  *
  * @author User
  */
-import java.util.Date;
 
-public class Stok_Barang {
+
+public class StokBarang {
     private int idBarang;
     private int jumlahStok;
-    private Date tanggalKadaluarsa;
+    private int tanggalKadaluarsa;
 
     // Constructor
-    public Stok_Barang(int idBarang, int jumlahStok, Date tanggalKadaluarsa) {
+    public StokBarang(int idBarang, int jumlahStok, int tanggalKadaluarsa) {
         this.idBarang = idBarang;
         this.jumlahStok = jumlahStok;
         this.tanggalKadaluarsa = tanggalKadaluarsa;
@@ -39,11 +39,11 @@ public class Stok_Barang {
         this.jumlahStok = jumlahStok;
     }
 
-    public Date getTanggalKadaluarsa() {
+    public int getTanggalKadaluarsa() {
         return tanggalKadaluarsa;
     }
 
-    public void setTanggalKadaluarsa(Date tanggalKadaluarsa) {
+    public void setTanggalKadaluarsa(int tanggalKadaluarsa) {
         this.tanggalKadaluarsa = tanggalKadaluarsa;
     }
 
@@ -52,11 +52,6 @@ public class Stok_Barang {
         System.out.println("ID Barang: " + idBarang);
         System.out.println("Jumlah Stok: " + jumlahStok);
         System.out.println("Tanggal Kadaluarsa: " + tanggalKadaluarsa);
-        System.out.println("Informasi Produk:");
     }
     
-    public boolean isStokKadaluarsa() {
-        Date tanggalSekarang = new Date();
-        return tanggalKadaluarsa.before(tanggalSekarang);
-    }
 }

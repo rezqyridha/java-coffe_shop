@@ -8,16 +8,16 @@ package Data;
  *
  * @author User
  */
-import java.util.Date;
+
 
 public class Transaksi {
     private int idTransaksi;
-    private Date tanggalTransaksi;
-    private double jumlahPembayaran;
+    private int tanggalTransaksi;
+    private String jumlahPembayaran;
     private String jenisPembayaran;
 
     // Constructor
-    public Transaksi(int idTransaksi, Date tanggalTransaksi, double jumlahPembayaran, String jenisPembayaran) {
+    public Transaksi(int idTransaksi, int tanggalTransaksi, String jumlahPembayaran, String jenisPembayaran) {
         this.idTransaksi = idTransaksi;
         this.tanggalTransaksi = tanggalTransaksi;
         this.jumlahPembayaran = jumlahPembayaran;
@@ -33,19 +33,19 @@ public class Transaksi {
         this.idTransaksi = idTransaksi;
     }
 
-    public Date getTanggalTransaksi() {
+    public int getTanggalTransaksi() {
         return tanggalTransaksi;
     }
 
-    public void setTanggalTransaksi(Date tanggalTransaksi) {
+    public void setTanggalTransaksi(int tanggalTransaksi) {
         this.tanggalTransaksi = tanggalTransaksi;
     }
 
-    public double getJumlahPembayaran() {
+    public String getJumlahPembayaran() {
         return jumlahPembayaran;
     }
 
-    public void setJumlahPembayaran(double jumlahPembayaran) {
+    public void setJumlahPembayaran(String jumlahPembayaran) {
         this.jumlahPembayaran = jumlahPembayaran;
     }
 

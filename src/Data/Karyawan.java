@@ -12,10 +12,10 @@ public class Karyawan {
     private int idKaryawan;
     private String namaKaryawan;
     private String posisi;
-    private double gaji;
+    private String gaji;
 
     // Constructor
-    public Karyawan(int idKaryawan, String namaKaryawan, String posisi, double gaji) {
+    public Karyawan(int idKaryawan, String namaKaryawan, String posisi, String gaji) {
         this.idKaryawan = idKaryawan;
         this.namaKaryawan = namaKaryawan;
         this.posisi = posisi;
@@ -47,11 +47,11 @@ public class Karyawan {
         this.posisi = posisi;
     }
 
-    public double getGaji() {
+    public String getGaji() {
         return gaji;
     }
 
-    public void setGaji(double gaji) {
+    public void setGaji(String gaji) {
         this.gaji = gaji;
     }
 

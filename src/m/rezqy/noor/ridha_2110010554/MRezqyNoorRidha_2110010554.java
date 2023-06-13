@@ -8,10 +8,11 @@ import Data.Karyawan;
 import Data.Pelanggan;
 import Data.Pemasok;
 import Data.Produk;
-import Data.Stok_Barang;
+import Data.StokBarang;
 import Data.Transaksi;
+import forms.frameUtama;
 import java.util.Date;
-
+import java.util.ArrayList;
 /**
  *
  * @author User
@@ -20,7 +21,7 @@ public class MRezqyNoorRidha_2110010554 {
 
    
     public static void main(String[] args) {
-
+        /*
 
         // Membuat objek dari class Produk
         Produk produk = new Produk(1, "Kopi", "Kopi Arabica", 15000, 50);
@@ -47,6 +48,12 @@ public class MRezqyNoorRidha_2110010554 {
         transaksi.tampilkanInfo();
         karyawan.tampilkanInfoKaryawan();
         pemasok.tampilkanInfo();
+        */
+       
+        frameUtama myFrame = new frameUtama(); //membuat objek myframe
+        
+        myFrame.setVisible(true);
+        
     }
 }
 
